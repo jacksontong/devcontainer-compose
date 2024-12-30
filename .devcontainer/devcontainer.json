@@ -1,0 +1,17 @@
+{
+  "name": "Go Development Container",
+  "dockerComposeFile": "../docker-compose.yaml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": ["golang.Go", "EditorConfig.EditorConfig"],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": { "zsh": { "path": "/bin/zsh" } }
+      }
+    }
+  },
+  "remoteUser": "vscode",
+  "shutdownAction": "stopCompose"
+}
